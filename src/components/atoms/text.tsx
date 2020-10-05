@@ -6,7 +6,7 @@ interface IProps {
   lineHeight: string
   marginBottom?: string
   fontWeight?: string
-  opacity?: boolean
+  transparancy?: boolean
 }
 
 const Text = styled.p`
@@ -25,7 +25,7 @@ const Text = styled.p`
       font-weight: ${p.fontWeight};
     `}
   ${(p: IProps) =>
-    p.opacity &&
+    p.transparancy &&
     css`
       opacity: 0.5;
     `}

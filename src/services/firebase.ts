@@ -1,4 +1,3 @@
-/* eslint-disable unicorn/explicit-length-check */
 import firebase from "firebase"
 
 const firebaseConfig = {
@@ -11,8 +10,6 @@ const firebaseConfig = {
   appId: "1:215536702188:web:77304959ed603b85fc4bc9",
 }
 
-if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig)
-}
+firebase.initializeApp(firebaseConfig)
 
 export const database = firebase.firestore()

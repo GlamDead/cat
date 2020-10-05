@@ -50,7 +50,7 @@ const TitleCard = ({
         fontSize="16px"
         lineHeight="19px"
         marginBottom="5px"
-        opacity={!availability}
+        transparancy={!availability}
       >
         {hover ? taglineHover : tagline}
       </Text>
@@ -59,7 +59,7 @@ const TitleCard = ({
         fontSize="48px"
         lineHeight="56px"
         fontWeight="700"
-        opacity={!availability}
+        transparancy={!availability}
       >
         {brand}
       </Text>
@@ -69,7 +69,7 @@ const TitleCard = ({
         lineHeight="26px"
         fontWeight="700"
         marginBottom="15px"
-        opacity={!availability}
+        transparancy={!availability}
       >
         {taste}
       </Text>
@@ -77,7 +77,7 @@ const TitleCard = ({
         color={availability ? "#666666" : "#b3b3b3"}
         fontSize="14px"
         lineHeight="16px"
-        opacity={!availability}
+        transparancy={!availability}
       >
         <Span>{countPortions}</Span> {portions}
         <br />
