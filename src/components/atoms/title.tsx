@@ -8,6 +8,7 @@ const H1Styled = styled.h1`
   text-shadow: 0px 1px 1px #000000;
   line-height: 42px;
   font-family: Exo2, sans-serif;
+  font-weight: 100;
 `
 
 interface IProps {

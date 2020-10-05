@@ -12,6 +12,7 @@
     "firebase": "^7.21.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-firebase-hooks": "^2.2.0",
     "react-scripts": "3.4.3",
     "styled-components": "^5.2.0",
     "styled-reset": "^4.2.3",
@@ -69,8 +70,7 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "stylelint --fix"
+      "eslint --fix"
     ]
   }
 }

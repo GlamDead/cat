@@ -8,7 +8,7 @@ interface IProps {
   active: boolean
 }
 
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   width: 80px;
   height: 80px;
   background-color: ${(p: IProps) => (p.active ? "#d91667" : "#1698d9")};
@@ -16,8 +16,9 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   ${(p: IProps) =>
-    p.availability &&
+    !p.availability &&
     css`
       background-color: #b3b3b3;
     `}
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
 const Weight = ({ availability, weight, active }: IProps): ReactElement => {
   return (
     <Wrapper availability={availability} active={active} weight="">
-      <Text color="#ffffff" fontSize="42px" lineHeight="22px">
+      <Text color="#ffffff" fontSize="42px" lineHeight="38px">
         {weight}
       </Text>
       <Text color="#ffffff" fontSize="21px" lineHeight="22px">
