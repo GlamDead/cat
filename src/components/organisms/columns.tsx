@@ -5,6 +5,11 @@ import Spinner from "../atoms/spinner"
 import Column from "./column"
 import { ICard } from "../../types/interfaces"
 
+const Root = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const Container = styled.div`
   display: flex;
   justify-content: center;
@@ -25,13 +30,15 @@ const Columns = (): ReactElement => {
   }
 
   return (
-    <Container>
-      {loading && <Spinner />}
-      {cards &&
-        cards.map((card, index) => (
-          <Column key={index} card={card} setActive={setActive} />
-        ))}
-    </Container>
+    <Root>
+      <Container>
+        {loading && <Spinner />}
+        {cards &&
+          cards.map((card, index) => (
+            <Column key={index} card={card} setActive={setActive} />
+          ))}
+      </Container>
+    </Root>
   )
 }
 
