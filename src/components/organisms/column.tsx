@@ -41,4 +41,4 @@ const Column = (props: ICardActive): ReactElement => {
   )
 }
 
-export default Column
+export default React.memo(Column)

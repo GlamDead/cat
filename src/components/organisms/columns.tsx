@@ -1,6 +1,6 @@
 import React, { ReactElement } from "react"
 import styled from "styled-components"
-import useCard from "../../hooks/get-data"
+import useCard from "../../hooks/use-cards"
 import Spinner from "../atoms/spinner"
 import Column from "./column"
 import { ICard } from "../../types/interfaces"

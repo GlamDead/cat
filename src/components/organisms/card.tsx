@@ -85,7 +85,7 @@ const Card = ({ card, setActive }: ICardActive): ReactElement => {
     <Root
       availability={availability}
       active={active}
-      onClick={() => setActive(card.id)}
+      onClick={() => availability && setActive(card.id)}
       onMouseLeave={() => {
         active && setLeave(true)
         hover && setHover(false)
